@@ -76,7 +76,7 @@
 - [] File System
 - [] Hash Table
 
-## Chapter 8: Recursion an Dynamic Programming
+## Chapter 8: Recursion and Dynamic Programming
 
 - [] Triple Step
 - [] Robot in a Grid
