@@ -4,11 +4,11 @@
 
 ## Chapter 1: Arrays and Strings
 
-- [] Is Unique
-- [] Check Permutation
-- [] URLify
-- [] Palindrome Permutation
-- [] One Away
+- [x] Is Unique
+- [x] Check Permutation
+- [x] URLify
+- [x] Palindrome Permutation
+- [x] One Away
 - [] String Compression
 - [] Rotate Matrix
 - [] Zero Matrix
