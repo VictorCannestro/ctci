@@ -9,8 +9,8 @@
 - [x] URLify
 - [x] Palindrome Permutation
 - [x] One Away
-- [] String Compression
-- [] Rotate Matrix
+- [x] String Compression
+- [x] Rotate Matrix
 - [] Zero Matrix
 - [] String Rotation
 
