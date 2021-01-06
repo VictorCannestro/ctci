@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jan  4 20:44:32 2021
+Write an algorithm such that if an element in an MxN matrix is 0, its entire
+row and column are set to 0.
 
 @author: Victor Cannestro
 """

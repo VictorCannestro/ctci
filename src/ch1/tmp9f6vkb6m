@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Given an image represented by an NxN matrix, where each pixel in the image is
-represented by an integer, write a method to rotate the image by 90 degrees.
-Can you do this in place?
+Created on Mon Jan  4 20:44:09 2021
 
 @author: Victor Cannestro
 """
@@ -11,13 +9,12 @@ def rotate(matrix):
     '''
     Parameters
     ----------
-    matrix : list
+    matrix : list of lists
         NxN list of lists where each element of the inner lists are integers 
         and N>=1.
 
     Returns
     -------
-    list
     The same list rotated 90 CCW calculated in O(N**2) runtime.
     '''
     idx = 0
@@ -34,13 +31,12 @@ def rotateInPlace(matrix):
     '''
     Parameters
     ----------
-    matrix : list
+    matrix : list of lists
         NxN list of lists where each element of the inner lists are integers 
         and N>=1.
 
     Returns
     -------
-    list
     The same list rotated 90 CCW calculated in O(N) runtime. Takes advantage
     of the observation that the minimum number of elements we can swap during
     a rotation in-place is 4 (since there are four corners).
@@ -54,18 +50,18 @@ def rotateInPlace(matrix):
     '''
     N = len(matrix)
     for i in range(round((N+1)/2)): # How many perimeter loops are there       
-        for j in range(i, N-i-1): # Reduced size of inner perimeter loops
-            print(f"i={i}, j={j}, {N-j-1}")
+        for j in range(i, N-i-1): #
+            print(f"i={i}, j={j}, {N-j+1}")
             # Store pre-swap values to make the substitutions
             x1 = matrix[i][j] 
             x2 = matrix[j][N-i-1]
-            x3 = matrix[N-i-1][N-j-1]
-            x4 = matrix[N-j-1][i]           
+            x3 = matrix[N-i-1][N-j+1]
+            x4 = matrix[N-j+1][i]           
             # Swap "corners" to rotate 90 deg CCW
             matrix[i][j] = x2
             matrix[j][N-i-1] = x3
-            matrix[N-i-1][N-j-1] = x4
-            matrix[N-j-1][i] = x1          
+            matrix[N-i-1][N-j+1] = x4
+            matrix[N-j+1][i] = x1          
     return matrix
     
 

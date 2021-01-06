@@ -32,7 +32,6 @@ def isPermutedPalindrone(string):
     bool
         The determination of whether string is a permutation of a 
         palindrone.
-
     '''
     if len(string) == 0:
         return False   
