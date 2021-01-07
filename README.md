@@ -12,7 +12,7 @@
 - [x] String Compression
 - [x] Rotate Matrix
 - [x] Zero Matrix
-- [] String Rotation
+- [x] String Rotation
 
 ## Chapter 2: Linked Lists
 
