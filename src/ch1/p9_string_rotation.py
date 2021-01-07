@@ -44,11 +44,13 @@ def isRotationVer2(s1,s2):
     E.g. 
         "waterbottle" is in "erbottlewat" + "erbottlewat""
     '''
+    # Screen the inputs
     if len(s1) != len(s2):
         return False
     elif len(s1) == 0:
         return False
-    elif s2 in s1+s1:
+    # Determine if there is a rotation
+    if s2 in s1 + s1:
         return True
     else:
         return False
