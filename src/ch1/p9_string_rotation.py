@@ -8,4 +8,22 @@ rotation of "erbottlewat").
 @author: Victor Cannestro
 """
 
+def isRotation(s1,s2):
+    '''
+    Parameters
+    ----------
+    s1 : str
+        DESCRIPTION.
+    s2 : str
+        DESCRIPTION.
 
+    Returns
+    -------
+    bool.
+    '''
+    pass
+
+
+if __name__ == "__main__":
+    s1 = "ooooooorf"
+    print(isRotation(s1))

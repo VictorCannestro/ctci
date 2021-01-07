@@ -55,7 +55,6 @@ def rotateInPlace(matrix):
     N = len(matrix)
     for i in range(round((N+1)/2)): # How many perimeter loops are there       
         for j in range(i, N-i-1): # Reduced size of inner perimeter loops
-            print(f"i={i}, j={j}, {N-j-1}")
             # Store pre-swap values to make the substitutions
             x1 = matrix[i][j] 
             x2 = matrix[j][N-i-1]
