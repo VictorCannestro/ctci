@@ -11,7 +11,7 @@
 - [x] One Away
 - [x] String Compression
 - [x] Rotate Matrix
-- [] Zero Matrix
+- [x] Zero Matrix
 - [] String Rotation
 
 ## Chapter 2: Linked Lists
