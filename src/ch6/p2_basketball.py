@@ -41,6 +41,8 @@ f_bern = lambda x: p
 f_bino = lambda x: 3*p**2*(1-p) + p**3 
 zeros = (0, 0.5, 1)
 
+plt.rcParams["figure.figsize"] = [12,9]
+plt.rcParams.update({'font.size': 18})
 plt.plot(p, 
          f_bern(p), 
          label=r"Game 1: $P[A] = p$")
@@ -58,4 +60,5 @@ plt.legend()
 plt.grid(True)
 
 if __name__ == "__main__":
+    plt.savefig("Prob_6_2")
     plt.show()
