@@ -10,7 +10,19 @@ should you pick one game or the other?
 
 @author: Victor Cannestro
 """
+import matplotlib.pyplot as plt
+import numpy as np
 
+N = 3
+p = np.arange(0, 1.01, 0.01)
+outcomes = []
+for i in range(len(p)):
+    x = sum(np.random.binomial(N, p) > 1)
+    print(x)
+    outcomes.append(x)
+plt.hist( outcomes)
+plt.xlabel('Probability of Making a Shot')
+plt.ylabel('Probability')
 
 if __name__ == "__main__":
-    print()
+    plt.show()
