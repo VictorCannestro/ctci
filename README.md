@@ -50,8 +50,8 @@
 - [] Paths with Sum
 ## Chapter 6: Math and Logic Puzzles
 
-- [] The Heavy Pill 
-- [] Basketball
+- [x] The Heavy Pill 
+- [x] Basketball
 - [] Dominoes
 - [] Ants on a Triangle
 - [] Jugs of Water
