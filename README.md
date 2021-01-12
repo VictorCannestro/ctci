@@ -52,7 +52,7 @@
 
 - [x] The Heavy Pill 
 - [x] Basketball
-- [] Dominoes
+- [x] Dominoes
 - [] Ants on a Triangle
 - [] Jugs of Water
 - [] Blue-Eyed Island
