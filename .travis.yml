@@ -9,6 +9,6 @@ before_install:
 install:
   - pip install ".[test]"
 script: 
-  - pytest tests
+  - pytest run_tests.py
 after_success:
   - codecov 
