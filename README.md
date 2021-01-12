@@ -1,6 +1,6 @@
 # Cracking the 6th edition of "Cracking the Coding Interview"
 
-[![Build Status]()
+[![Build Status](https://travis-ci.com/VictorCannestro/ctci.svg?token=sVpeNC7UkAAA7nodeBjq&branch=main)
 
 ## Chapter 1: Arrays and Strings
 
