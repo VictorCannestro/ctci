@@ -4,8 +4,8 @@ Created on Wed Jan  6 21:40:56 2021
 
 @author: Victor Cannestro
 """
-
 from src.ch1.p9_string_rotation import isRotation, isRotationVer2
+
 
 class TestIsRotation(object):
     ''''''

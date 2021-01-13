@@ -37,8 +37,11 @@ ANSWER:
 """
 from typing import Tuple
 
+
 class Domino:
     def __init__(self, id: int):
+        if id < 0:
+            raise ValueError("Domino ID must be non-negative")
         self.isPlaced = False
         self.ID = id
         self.position = ()
@@ -64,6 +67,7 @@ class Domino:
         
     
 class Board:
+    dominoIDs = []
     dominosPlaced = 0
     
     def __init__(self, n: int):
@@ -81,13 +85,13 @@ class Board:
         return s
     
     def __repr__(self) -> str:
-        info = f"Domino(ID={self.ID}, isPlaced={self.isPlaced}, position={self.position})"
+        info = f"Board(n={len(self.grid)}, dominosPlaced={self.dominosPlaced})"
         return info
-    
-    
+      
     def addDomino(self, domino, position: Tuple):
         p1, p2 = position
         dom_id = domino.getID()
+        self.dominoIDs.append(dom_id)
         self.dominosPlaced += 1
         extra = " " if dom_id < 10 else ""
         domino.setPosition(position)
@@ -96,6 +100,9 @@ class Board:
             
     def getOpenPositions(self):
         pass
+    
+    def getDominosPlaced(self):
+        return self.dominosPlaced
 
         
 class Controller:
