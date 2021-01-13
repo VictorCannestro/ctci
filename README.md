@@ -53,8 +53,8 @@
 - [x] The Heavy Pill 
 - [x] Basketball
 - [x] Dominoes
-- [] Ants on a Triangle
-- [] Jugs of Water
+- [x] Ants on a Triangle
+- [x] Jugs of Water
 - [] Blue-Eyed Island
 - [] The Apocalypse
 - [] The Egg Drop Problem
