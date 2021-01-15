@@ -1,6 +1,44 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jan 12 17:27:05 2021
+ANSWER:
+    
+    There are now 30 black tiles and 32 white tiles (or vice versa if the 
+    other set of corners is considered). The 31 dominos we have available can
+    cover up to 62 tiles on the board, assuming the board is normal and we 
+    place them wisely in a configuration that leaves no spaces in between
+    dominos. With the 2 tiles missing, there are 62 open tiles on board. 
+    
+    There are 3 starting/ending configurations by the missing corners if we 
+    try to cover all the tiles without leaving spaces:
+    
+        [   ][ 1 ][ 1 ]...
+        [ 2 ][ B ][ W ]...
+        [ 2 ][ W ][ B ]...
+    
+        [   ][ 1 ][ B ]...
+        [ 2 ][ 1 ][ W ]...
+        [ 2 ][ W ][ B ]...
+        
+        [   ][ 1 ][ 1 ]...
+        [ 2 ][ 2 ][ W ]...
+        [ B ][ W ][ B ]...
+        
+    where dominos are represented as individual integers in a row/col.
+    
+    Best Case: We can fit at most 30 dominos on the board with 2 tiles left 
+               open after following an efficient configuration. (So called 
+               proof by picture).
+              
+    Claim: On an NxN checkered board where N is an even natural number (i.e. 
+           2,4,6,8,...) there will always be 2 squares left uncovered if any
+           two diagonal corners are cut off and the dominos can cover 2 tiles
+           in either a row or column each.
+                      
+           2x2 Case             4x4 Case
+           [   ][ W ]           [   ][ 1 ][ 1 ][ 4 ]
+           [ W ][   ]           [ 2 ][ 2 ][ 3 ][ 4 ]
+                                [ 5 ][ 5 ][ 3 ][ W ]
+                                [ 6 ][ 6 ][ W ][   ]
 
 @author: Victor Cannestro
 """
@@ -10,7 +48,7 @@ from src.ch6.p3_dominos import Domino, Board
 
 
 class TestDomino(object):
-    ids = [1,2,30]
+    ids = [1, 2, 30]
     doms = [Domino(i) for i in ids]
     positions = [((0,1),(0,2)), ((1,0),(1,1)), ((4,4),(4,5))]
         

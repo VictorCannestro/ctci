@@ -4,34 +4,6 @@ There is an 8x8 chessboard in which two diagonally opposite corners have been
 cut off. You are given 31 dominos, and a single domino can cover exactly two 
 squares. Can you use the 31 dominos to cover the entire board? Prove your
 answer.
-
-ANSWER:
-    
-    There are now 30 black tiles and 32 white tiles (or vice versa if the 
-    other set of corners is considered). The 31 dominos we have available can
-    cover up to 62 tiles on the board, assuming the board is normal and we 
-    place them wisely in a configuration that leaves no spaces in between
-    dominos. With the 2 tiles missing, there are 62 open tiles on board. 
-    
-    There are 3 starting/ending configurations by the missing corners if we 
-    try to cover all the tiles without leaving spaces:
-    
-        [   ][ o ][ o ]...
-        [ o ][ B ][ W ]...
-        [ o ][ W ][ B ]...
-    
-        [   ][ o ][ B ]...
-        [ o ][ o ][ W ]...
-        [ o ][ W ][ B ]...
-        
-        [   ][ o ][ o ]...
-        [ o ][ o ][ W ]...
-        [ B ][ W ][ B ]...
-        
-    where dominos are represented as two "o"s in a row/col.
-    
-    Best Case: We can fit at most 30 dominos on the board with 2 tiles left 
-               open after following an efficient configuration.
                
 @author: Victor Cannestro
 """

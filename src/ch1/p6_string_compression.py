@@ -9,7 +9,7 @@ the string has only uppercase and lowercase letters (a-z).
 @author: Victor Cannestro
 """
 
-def basicCompression(string):
+def basicCompression(string: str) -> str:
     '''
     Parameters
     ----------
@@ -43,6 +43,7 @@ def basicCompression(string):
         return compressed
     else:
         return string
+
 
 if __name__ == "__main__":
     s1 = "ooooooorf"

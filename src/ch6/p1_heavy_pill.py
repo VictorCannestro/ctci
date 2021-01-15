@@ -28,7 +28,9 @@ ANSWER:
 from typing import List
 
 
-def findOutlier(y: int, samples: List) -> float:
+Vector = List[float]
+
+def findOutlier(y: int, samples: Vector) -> float:
     '''
     Parameters
     ----------

@@ -6,7 +6,7 @@ other.
 @author: Victor Cannestro
 """
 
-def isPermutation(str1, str2):
+def isPermutation(str1: str, str2: str) -> bool:
     '''
     Parameters
     ----------
@@ -28,11 +28,12 @@ def isPermutation(str1, str2):
         return True
     return False
 
-def isPermutationVer2(str1, str2):
+def isPermutationVer2(str1: str, str2: str) -> bool:
     '''More efficient'''
     if len(str1) != len(str2) or len(str1) == 0 or len(str2) == 0:
         return False
     return sorted(str1) == sorted(str2)
+
 
 if __name__ == "__main__":
     s = "Cabbage soup"

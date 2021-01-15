@@ -8,19 +8,21 @@ non-letter characters.
 
 @author: Victor Cannestro
 """
+from typing import List
 from itertools import permutations
 
-def getUniquePerms(inputlist):
+
+def getUniquePerms(inputlist: List) -> List:
     # THIS IS A BOTTLENECK
     perms = permutations(inputlist) # n! elements
     return [*set(perms)] # discard redundant elements
 
-def isPalindrone(string):
+def isPalindrone(string: str) -> bool:
     if string == string[::-1]:
         return True
     return False
     
-def isPermutedPalindrone(string):
+def isPermutedPalindrone(string: str) -> bool:
     '''
     Parameters
     ----------
@@ -40,6 +42,7 @@ def isPermutedPalindrone(string):
         if isPalindrone("".join(i)) == True:
             return True
     return False
+
 
 if __name__ == "__main__":
     s = "wow"

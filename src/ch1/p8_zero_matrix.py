@@ -5,8 +5,13 @@ row and column are set to 0.
 
 @author: Victor Cannestro
 """
+from typing import List
 
-def setZeros(matrix):
+
+Vector = List[float]
+Matrix = List[Vector]
+
+def setZeros(matrix: Matrix) -> Matrix:
     '''
     Parameters
     ----------
@@ -37,7 +42,7 @@ def setZeros(matrix):
             matrix[row][col] = 0
     return matrix
 
-def setZerosVer2(matrix):
+def setZerosVer2(matrix: Matrix) -> Matrix:
     pass
 
 

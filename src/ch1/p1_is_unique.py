@@ -5,7 +5,7 @@ What if you cannot use additional data structures?
 
 @author: Victor Cannestro
 """
-def allUnique(string):
+def allUnique(string: str) -> bool:
     '''
     Input:
         string (str): the string to be analyzed 
@@ -21,7 +21,7 @@ def allUnique(string):
     return len(unique) == len(string)
 
 
-def allUniqueVer2(string):
+def allUniqueVer2(string: str) -> bool:
     '''
     Input:
         string (str): the string to be analyzed 
@@ -41,6 +41,7 @@ def allUniqueVer2(string):
                 return False
     return True
         
+
 if __name__ == "__main__":
     strings = ["Python is cool",""]
     for string in strings:

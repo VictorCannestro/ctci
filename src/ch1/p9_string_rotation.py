@@ -8,7 +8,7 @@ rotation of "erbottlewat").
 @author: Victor Cannestro
 """
 
-def isRotation(s1,s2):
+def isRotation(s1: str, s2: str) -> bool:
     '''
     Parameters
     ----------
@@ -36,7 +36,7 @@ def isRotation(s1,s2):
     return False
 
 
-def isRotationVer2(s1,s2):
+def isRotationVer2(s1: str, s2: str) -> bool:
     '''
     Assumes the existence of a method `isSubstring` which checks if one 
     word is a substring of another. Implementation uses only one call to 

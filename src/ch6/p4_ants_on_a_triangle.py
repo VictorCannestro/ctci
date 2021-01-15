@@ -8,57 +8,12 @@ the same speed.
 
 Similarly, find the probability of collision with n ants on an n vertex 
 polygon.
-
-ANSWER:
-    
-    It is easier to think of the converse problem: in which cases will the 
-    ants NOT collide. Here I will lay out two arguments to determine the 
-    probability.
-    
-    1) SET THEORY ARGUMENT: Let's start by defining the events of interest and 
-                            their respective probabilities: 
-                         
-    A = {The ants collide}  
-    A^c = {The ants do not collide}
-    
-    P[A^c] = P[({A1 CCW} and {A2 CCW} and {A3 CCW}) U ({A1 CW} and {A2 CW} and {A3 CW}))]
-           = P[{A1 CCW} and {A2 CCW} and {A3 CCW}] + P[{A1 CW} and {A2 CW} and {A3 CW}]   Since the events are disjoint
-           = P[{A1 CCW}]P[{A2 CCW}]P[{A3 CCW}] + P[{A1 CCW}]P[{A2 CCW}]P[{A3 CCW}]        Since the ants are independent     
-           = (p)(p)(p) + (p)(p)(p)
-           = 2*p^3.
-           
-    P[A] = 1 - P[A^c]      Since all probs must sum to 1
-         = 1 - 2*p^3
-         = 1 - 2*(1/2)^3   Since they pick a direction with equal prob
-         = 3/4. 
-                       
-    2) COMBINATORIAL ARGUMENT: There are only 2 cases: all are traveling CCW or 
-                               all are traveling CW. Now all that's left to 
-    determine the probability is to count the number of possible paths the 
-    ants could take:                            
-               
-        N = (2 choose 1)*(2 choose 1)*(2 choose 1)
-        = 2*2*2
-        = 8.
-        
-    Thus the probability is the division of N_ac / N:
-        
-        P[A^c] = 2/8
-               = 1/4.
-               
-        P[A] = 1 - 1/4
-             = 3/4.
-        
-    Generalizing to n ants on an n vertex polygon yields an even smaller 
-    probability:
-        
-        P[A] = 1 - 2/2^n
-             = 1 - (1/2)^(n-1).
-    
+   
 @author: Victor Cannestro
 """
 from typing import Tuple
 import numpy as np
+
 
 def calcAntProb() -> Tuple:
     '''

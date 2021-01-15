@@ -6,8 +6,13 @@ Can you do this in place?
 
 @author: Victor Cannestro
 """
+from typing import List
 
-def rotate(matrix):
+
+Vector = List[float]
+Matrix = List[Vector]
+
+def rotate(matrix: Matrix) -> Matrix:
     '''
     Parameters
     ----------
@@ -30,7 +35,7 @@ def rotate(matrix):
     return rotated
 
 
-def rotateInPlace(matrix):
+def rotateInPlace(matrix: Matrix) -> Matrix:
     '''
     Parameters
     ----------

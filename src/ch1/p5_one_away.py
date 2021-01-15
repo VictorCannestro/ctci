@@ -7,14 +7,14 @@ write a function to check if they are one edit (or zero edits) away.
 @author: Victor Cannestro
 """
 
-def checkForInsertion(s1, s2, length):
+def checkForInsertion(s1: str, s2: str, length: int) -> bool:
     for i in range(length):
         temp = s1[:i] + s1[i+1:]
         if temp == s2:
             return True
     return False
 
-def oneEditAway(str1, str2):
+def oneEditAway(str1: str, str2: str) -> bool:
     '''
     Parameters
     ----------

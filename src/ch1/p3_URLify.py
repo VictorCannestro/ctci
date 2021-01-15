@@ -9,7 +9,7 @@ this operatio in place.)
 @author: Victor Cannestro
 """
 
-def urlify(string):
+def urlify(string: str) -> str:
     '''
     Parameters
     ----------
