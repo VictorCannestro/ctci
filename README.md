@@ -23,7 +23,7 @@
 - [] Palindrome
 - [] Intersection
 - [] Loop Detection
--->
+
 
 ## Chapter 3: Stacks and Queues
 - [] Three in One
@@ -32,6 +32,7 @@
 - [] Queues via Stacks
 - [] Sort Stack
 - [] Animal Shelter
+-->
 
 <!--
 ## Chapter 4: Trees and Graphs
