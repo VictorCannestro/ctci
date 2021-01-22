@@ -58,7 +58,7 @@
 - [x] Jugs of Water
 - [x] Blue-Eyed Island
 - [x] The Apocalypse
-- [] The Egg Drop Problem
+- [x] The Egg Drop Problem
 - [] 100 Lockers
 - [] Poison
 
