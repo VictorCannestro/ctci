@@ -13,7 +13,6 @@
 - [x] Zero Matrix
 - [x] String Rotation
 
-<!--
 ## Chapter 2: Linked Lists
 - [] Remove Dups
 - [] Return Kth to Last
@@ -24,7 +23,6 @@
 - [] Intersection
 - [] Loop Detection
 
-
 ## Chapter 3: Stacks and Queues
 - [] Three in One
 - [] Stack Min
@@ -32,7 +30,6 @@
 - [] Queues via Stacks
 - [] Sort Stack
 - [] Animal Shelter
--->
 
 <!--
 ## Chapter 4: Trees and Graphs
@@ -62,6 +59,7 @@
 - [] 100 Lockers
 - [] Poison
 
+<!--
 ## Chapter 7: Object-Oriented Design
 - [] Deck of Cards
 - [] Call Center
@@ -92,7 +90,6 @@
 - [] Stack of Boxes
 - [] Boolean Evaluation
 
-<!--
 ## Chapter 10: Sorting and Searching
 - [] Sorted Merge
 - [] Group Anagrams
