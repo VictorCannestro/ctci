@@ -12,7 +12,7 @@
 - [x] Rotate Matrix
 - [x] Zero Matrix
 - [x] String Rotation
-
+<!--
 ## Chapter 2: Linked Lists
 - [] Remove Dups
 - [] Return Kth to Last
@@ -22,7 +22,7 @@
 - [] Palindrome
 - [] Intersection
 - [] Loop Detection
-
+-->
 ## Chapter 3: Stacks and Queues
 - [] Three in One
 - [] Stack Min
@@ -89,7 +89,7 @@
 - [] Eight Queens
 - [] Stack of Boxes
 - [] Boolean Evaluation
-
+-->
 ## Chapter 10: Sorting and Searching
 - [] Sorted Merge
 - [] Group Anagrams
@@ -102,4 +102,4 @@
 - [] Sorted Matrix Search
 - [] Rank from Stream
 - [] Peaks and Valleys
--->
+
