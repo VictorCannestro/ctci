@@ -57,7 +57,7 @@
 - [x] The Apocalypse
 - [x] The Egg Drop Problem
 - [x] 100 Lockers
-- [] Poison
+- [x] Poison
 
 <!--
 ## Chapter 7: Object-Oriented Design
