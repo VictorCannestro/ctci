@@ -57,11 +57,11 @@
 - [x] The Apocalypse
 - [x] The Egg Drop Problem
 - [x] 100 Lockers
-- [x] Poison
+- [] Poison
 
 <!--
 ## Chapter 7: Object-Oriented Design
-- [] Deck of Cards
+- [] Deck f Cards
 - [] Call Center
 - [] Jukebox
 - [] Parking Lot
