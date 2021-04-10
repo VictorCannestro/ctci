@@ -17,7 +17,67 @@ code to simulate your approach.
 
 @author: Victor Cannestro
 """
+import numpy as np
+from typing import List, Tuple
+
+
+class Bottle:
+    def __init__(self, id_val: int):
+        self.ID = id_val
+        self.isPoisoned = False # Make unpoisoned by default
+    
+    def setIsPoisoned(self, newStatus: bool):
+        self.isPoisoned = newStatus
+
+    # Here for throroughness, though somewhat redundant in this implementation
+    def getID(self):
+        return self.ID
+    
+    def getStatus(self):
+        return self.isPoisoned
+
+
+def generateBottles(N: int) -> Tuple:
+    '''
+    Parameters
+    ----------
+    N : int
+        The number of bottles to consider.
+
+    Returns
+    -------
+    List
+        An array of N Bottle objects where exactly one is poisoned while 
+        the remaining N-1 are not.
+    '''
+    # Create a random index for the single poisoned bottle
+    idx = np.random.randint(low=0, high=N, size=1)
+    # Model N Bottles as indicator variables of restricted visibility
+    bottles = [Bottle(i) for i in range(N)]
+    # Mark off the poisoned bottle
+    bottles[idx].setIsPoisoned(True)
+    return idx, bottles
+
+
+def findPoisonedSimple(bottles: List) -> int:
+    '''
+    Parameters
+    ----------
+    bottles : np.array
+        A list of N indicator variables where exactly one value is 1 while 
+        the remaining values are 0s.
+
+    Returns
+    -------
+    int
+        Finds the index of the poisoned sample. 
+
+    '''
+    pass
 
 
 if __name__ == "__main__":
-    print()
+    n = 12
+    idx, bottles = generateBottles(n)
+    calc = findPoisonedSimple(bottles)
+    print(f"Expected idx: {idx}\nCalculated idx: {calc}")
