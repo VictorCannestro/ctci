@@ -25,6 +25,9 @@ class Bottle:
     def __init__(self, id_val: int):
         self.ID = id_val
         self.isPoisoned = False # Make unpoisoned by default
+
+    def __str__(self) -> str:
+        return str(f"Bottle {self.ID}")
     
     def setIsPoisoned(self, newStatus: bool):
         self.isPoisoned = newStatus
@@ -63,7 +66,7 @@ def findPoisonedSimple(bottles: List) -> int:
     '''
     Parameters
     ----------
-    bottles : np.array
+    bottles : List
         A list of N indicator variables where exactly one value is 1 while 
         the remaining values are 0s.
 
@@ -75,6 +78,23 @@ def findPoisonedSimple(bottles: List) -> int:
     '''
     pass
 
+
+def findPoisoned(bottles: List) -> int:
+    '''
+    Parameters
+    ----------
+    bottles : List
+        A list of N indicator variables where exactly one value is 1 while 
+        the remaining values are 0s.
+
+    Returns
+    -------
+    int
+        Finds the index of the poisoned sample.
+
+    '''
+    pass
+    
 
 if __name__ == "__main__":
     n = 12
