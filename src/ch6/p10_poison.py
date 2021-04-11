@@ -33,10 +33,10 @@ class Bottle:
         self.isPoisoned = newStatus
 
     # Here for throroughness, though somewhat redundant in this implementation
-    def getID(self):
+    def getID(self) -> int:
         return self.ID
     
-    def getStatus(self):
+    def getStatus(self) -> bool:
         return self.isPoisoned
 
 
@@ -49,17 +49,33 @@ def generateBottles(N: int) -> Tuple:
 
     Returns
     -------
-    List
-        An array of N Bottle objects where exactly one is poisoned while 
-        the remaining N-1 are not.
+    Tuple
+        The index of the poisoned bottle; A list of N Bottle objects where 
+        exactly one is poisoned while the remaining N-1 are not.
     '''
     # Create a random index for the single poisoned bottle
-    idx = np.random.randint(low=0, high=N, size=1)
+    idx = np.random.randint(low=0, high=N, size=1)[0]
     # Model N Bottles as indicator variables of restricted visibility
     bottles = [Bottle(i) for i in range(N)]
     # Mark off the poisoned bottle
     bottles[idx].setIsPoisoned(True)
     return idx, bottles
+
+
+def chunks(lst, n):
+    """Helper Function: Yield successive n-sized chunks from lst."""
+    chunky = []
+    for i in range(0, len(lst), n):
+        chunky.append(lst[i:i + n])
+    return chunky
+
+        
+def useTestStrip(testBin) -> int:
+    '''This is available to us as a black box test via the Test Strips.'''
+    testResults = 0
+    for bottle in testBin:
+        testResults += bottle.getStatus() 
+    return testResults
 
 
 def findPoisonedSimple(bottles: List) -> int:
@@ -74,30 +90,31 @@ def findPoisonedSimple(bottles: List) -> int:
     -------
     int
         Finds the index of the poisoned sample. 
-
     '''
-    pass
+    testStrips = 10   
+    subset = bottles
+    bins = [100, 10, 2, 1]
+    for binSize in bins:
+        binnedBottles = chunks(subset, binSize)
+        testResults = []
+        # Run a test for each strip 
+        for i in range(testStrips):
+            if i == len(binnedBottles): # Case of more strips than bins
+                break
+            testBin = binnedBottles[i]
+            testResults.append(useTestStrip(testBin))  
+        if sum(testResults) > 0: # A bottle in this test bin is poisoned
+            testStrips -= 1
+            subset = binnedBottles[testResults.index(1)] # Focus on this bin
+        else:
+            subset = binnedBottles[-1]
 
-
-def findPoisoned(bottles: List) -> int:
-    '''
-    Parameters
-    ----------
-    bottles : List
-        A list of N indicator variables where exactly one value is 1 while 
-        the remaining values are 0s.
-
-    Returns
-    -------
-    int
-        Finds the index of the poisoned sample.
-
-    '''
-    pass
+    print(f"The number of days required to find the poisoned bottle is {7*(10-testStrips)}.")       
+    return subset[0].getID()
     
 
 if __name__ == "__main__":
-    n = 12
+    n = 1000
     idx, bottles = generateBottles(n)
     calc = findPoisonedSimple(bottles)
-    print(f"Expected idx: {idx}\nCalculated idx: {calc}")
+    print(f"Expected index: {idx}\nCalculated index: {calc}")
