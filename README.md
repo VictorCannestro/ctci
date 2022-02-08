@@ -16,22 +16,26 @@
 |9|  String Rotation            | [p9_string_rotation.py](https://github.com/VictorCannestro/ctci/blob/main/src/ch1/p9_string_rotation.py) | [test_ch1_p9.py](https://github.com/VictorCannestro/ctci/blob/main/tests/ch1/test_ch1_p9.py) |
 <!--
 ## Chapter 2: Linked Lists
-- [] Remove Dups
-- [] Return Kth to Last
-- [] Delete Middle Node
-- [] Partition
-- [] Sum Lists
-- [] Palindrome
-- [] Intersection
-- [] Loop Detection
+|#| Problem                     | Solution | Tests |
+|-|-----------------------------|----------|-------|
+|1| Remove Dups                 | []() | []() |
+|2| Return Kth to Last          | []() | []() |
+|3| Delete Middle Node          | []() | []() |
+|4| Partition                   | []() | []() |
+|5| Sum Lists                   | []() | []() |
+|6| Palindrome                  | []() | []() |
+|7| Intersection                | []() | []() |
+|8| Loop Detection              | []() | []() |
 -->
 ## Chapter 3: Stacks and Queues
-- [] Three in One
-- [] Stack Min
-- [] Stack of Plates
-- [] Queues via Stacks
-- [] Sort Stack
-- [] Animal Shelter
+|#| Problem                     | Solution | Tests |
+|-|-----------------------------|----------|-------|
+|1| Three in One                | []() | []() |
+|2| Stack Min                   | []() | []() |
+|3| Stack of Plates             | []() | []() |
+|4| Queues via Stacks           | []() | []() |
+|5| Sort Stack                  | []() | []() |
+|6| Animal Shelter              | []() | []() |
 
 <!--
 ## Chapter 4: Trees and Graphs
@@ -95,15 +99,17 @@
 - [] Boolean Evaluation
 -->
 ## Chapter 10: Sorting and Searching
-- [] Sorted Merge
-- [] Group Anagrams
-- [] Search in Rotated Array
-- [] Sorted Search, No Size
-- [] Sparse Search
-- [] Sort Big File
-- [] Missing Int
-- [] Find Duplicates
-- [] Sorted Matrix Search
-- [] Rank from Stream
-- [] Peaks and Valleys
+|# | Problem                     | Solution | Tests |
+|--|-----------------------------|----------|-------|
+|1 | Sorted Merge                | []() | []() |
+|2 | Group Anagrams              | []() | []() |
+|3 | Search in Rotated Array     | []() | []() |
+|4 | Sorted Search, No Size      | []() | []() |
+|5 | Sparse Search               | []() | []() |
+|6 | Sort Big File               | []() | []() |
+|7 | Missing Int                 | []() | []() |
+|8 | Find Duplicates             | []() | []() |
+|9 | Sorted Matrix Search        | []() | []() |
+|10| Rank from Stream            | []() | []() |
+|11| Peaks and Valleys           | []() | []() |
 
